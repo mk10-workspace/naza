@@ -215,6 +215,23 @@ button {
     padding-bottom: 60px;
 }
 
+.section-curve {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    line-height: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.section-curve svg {
+    display: block;
+    width: 100%;
+    height: 40px; /* Subtle height as requested */
+}
+
 .hero-grid {
     position: absolute;
     inset: 0;
@@ -745,7 +762,8 @@ button {
 
 /* OUR CORE SERVICES */
 .core-services {
-    padding: 100px 0;
+    position: relative;
+    padding: 100px 0 140px; /* Extra bottom padding for the curve */
     background: var(--color-dark);
 }
 
@@ -1098,7 +1116,8 @@ button {
 
 /* TESTIMONIALS */
 .testimonials {
-    padding: 100px 0;
+    position: relative;
+    padding: 100px 0 140px; /* Extra padding for bottom curve */
     background: var(--color-dark);
 }
 
@@ -1371,7 +1390,7 @@ button {
 /* CTA SECTION */
 .cta-section {
     position: relative;
-    padding: 100px 0;
+    padding: 100px 0 140px; /* Extra space for the footer curve */
     background: var(--color-cta);
     overflow: hidden;
 }
