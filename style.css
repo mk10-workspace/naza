@@ -306,21 +306,22 @@ button {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     flex-wrap: wrap;
 }
 
 .badge {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    border: 1.5px solid rgba(255, 255, 255, 0.20);
+    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
     color: var(--color-white);
-    padding: 6px 20px 6px 6px;
-    border-radius: 14px;
-    font-size: 18px;
+    padding: 4px 12px 4px 4px;
+    border-radius: 8px;
+    font-size: 16px;
     font-weight: 700;
     transition: all var(--transition);
+    letter-spacing: -0.16px;
 }
 
 .badge:hover {
@@ -330,10 +331,10 @@ button {
 }
 
 .badge-icon {
-    width: 44px;
-    height: 44px;
+    width: 24px;
+    height: 24px;
     background: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -341,28 +342,30 @@ button {
 }
 
 .badge-icon img {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     object-fit: contain;
 }
 
 .hero-subtitle {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--color-white);
     margin-bottom: 16px;
+    line-height: 135%;
+    letter-spacing: -0.03em;
 }
 
 .hero-description {
     font-size: 16px;
-    line-height: 170%;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 8px;
+    line-height: 150%;
+    color: var(--color-white);
+    margin-bottom: 12px;
+    letter-spacing: -0.16px;
 }
 
 .hero-description strong {
-    color: rgba(255, 255, 255, 0.9);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .hero-tagline {
@@ -1717,8 +1720,20 @@ button {
     }
 
     .badge {
-        padding: 6px 14px;
-        font-size: 13px;
+        padding: 4px 14px 4px 4px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    .badge-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+    }
+
+    .badge-icon img {
+        width: 18px;
+        height: 18px;
     }
 
     .section-title {
