@@ -933,14 +933,15 @@ button {
     display: flex;
     align-items: flex-end;
     gap: 6px;
-    height: 48px;
+    height: 56px;
+    justify-content: space-around;
 }
 
 .svc-bar-chart span {
-    flex: 1;
+    /* flex: 1; */
     background: rgba(56, 60, 252, 0.15);
     border-radius: 3px 3px 0 0;
-    min-width: 8px;
+    min-width: 5px;
     transition: background var(--transition);
 }
 
